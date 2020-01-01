@@ -3,7 +3,7 @@ const github = require("@actions/github");
 
 try {
   const mndata = core.getInput("mndata");
-  console.log(`Hello ${mndata}!`);
+  console.log(JSON.stringify(mndata));
   const payload = JSON.stringify(github.context.payload, undefined, 2);
   console.log(`The event payload: ${payload}`);
 } catch (error) {
