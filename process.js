@@ -14,7 +14,7 @@ const PushUI = function(msg) {
       simpleGit.checkout(["gh-pages"]);
     } else {
       console.log("aa");
-      simpleGit.checkoutLocalBranch(["gh-pages"]);
+      simpleGit.checkout(["--orphan", "foo"]);
     }
   });
 
