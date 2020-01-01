@@ -12,13 +12,13 @@ jobs:
 
       - name: testing..
         run: |
-          echo "${github.event.client_payload.data}"
-          echo "${toJson(github.event.client_payload.data)}"
+          echo "${{ github.event.client_payload.data }}"
+          echo "${{ toJson(github.event.client_payload.data) }}"
 
       - name: release
         run: |
           npm install
-          npm run build:repo -- ${{toJson(github.event.client_payload.data)}}
+          npm run build:repo -- ${{ toJson(github.event.client_payload.data) }}
           npm run push:repo
           npm run build:ui
           npm run push:ui
