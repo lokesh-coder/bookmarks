@@ -10,6 +10,7 @@ const CommitFiles = function(msg) {
 
 const PushUI = function(msg) {
   simpleGit.branchLocal((_, branches) => {
+    console.log("bra", branches);
     if (branches["gh-pages"]) {
       simpleGit.checkoutBranch(["gh-pages"]);
     } else {
