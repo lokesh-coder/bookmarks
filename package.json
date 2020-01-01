@@ -7,11 +7,27 @@
     "@actions/core": "^1.2.0",
     "@actions/github": "^2.0.0",
     "fs-jetpack": "^2.2.3",
-    "simple-git": "^1.129.0"
+    "simple-git": "^1.129.0",
+    "gh-pages": "^2.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0",
+    "@rollup/plugin-json": "^4.0.1",
+    "sirv-cli": "^0.4.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ui": "rollup -c",
+    "start:dev": "rollup -c -w",
+    "serve:ui": "sirv public",
+    "build:repo": "node ./scripts/build-repo.js",
+    "release:repo": "node ./scripts/release-repo.js",
+    "release:ui": "node ./scripts/release-ui.js"
   },
   "repository": {
     "type": "git",

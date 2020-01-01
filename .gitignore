@@ -1,1 +1,4 @@
-tempdir
+/node_modules/
+/src/public/build/
+
+.DS_Store

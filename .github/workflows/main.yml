@@ -10,10 +10,10 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: Do Something Based On Triggered Event Data
-        run: 'echo "Triggered event text: ${{ github.event.client_payload.data }}"'
-
-      - name: Trigger bookmark
-        uses: ./.github/actions
-        with:
-          mndata: "${{github.event.client_payload.data}}"
+      - name: release
+        run: |
+          npm install
+          npm run build:repo -- --data=${{github.event.client_payload.data}}
+          npm run push:repo
+          npm run build:ui
+          npm run push:ui

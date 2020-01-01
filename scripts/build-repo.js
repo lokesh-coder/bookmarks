@@ -1,13 +1,15 @@
 const jetpack = require("fs-jetpack");
 
-const AddBookmark = function(bookmark) {
+function BuildRepo(bookmark) {
   const dataFilePath = "./src/data.json";
   let dataFileContent = jetpack.read(dataFilePath);
+  console.log("bookmark=>", dataFileContent);
   if (!dataFileContent) {
     dataFileContent = JSON.stringify({ bookmarks: [], lastUpdated: "" });
     jetpack.file(dataFilePath, { content: dataFileContent, mode: "777" });
   }
   dataFileContent = JSON.parse(dataFileContent);
+
   const isBookmarkExists = dataFileContent.bookmarks.find(
     b => b.url === bookmark.url
   );
@@ -15,17 +17,9 @@ const AddBookmark = function(bookmark) {
     dataFileContent.bookmarks.push(bookmark);
     jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
   }
-};
-
-const GenerateUI = function() {
-  jetpack.dir("tempdir", { empty: true, mode: "777" });
-  jetpack.copy("ui", "tempdir", { overwrite: true });
-  jetpack.copy("src", "tempdir", { overwrite: true });
-};
-
-GenerateUI();
-
-module.exports = {
-  AddBookmark,
-  GenerateUI
-};
+}
+let bookmark = process.argv
+  .splice(-1, 1)
+  .join("")
+  .replace("--data=", "");
+BuildRepo(JSON.parse(bookmark));
