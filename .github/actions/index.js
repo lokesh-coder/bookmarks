@@ -10,7 +10,9 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2);
   console.log("payload", payload);
   app.AddBookmark(data);
+  app.GenerateUI();
   gitprocess.CommitFiles(`added bookmark: ${data.url}`);
+  gitprocess.PushUI(`ui changes`);
 } catch (error) {
   core.setFailed(error.message);
 }
