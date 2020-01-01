@@ -6,7 +6,6 @@ try {
   const mndata = core.getInput("mndata");
   const data = JSON.parse(mndata);
   data.updatedAt = new Date().toTimeString();
-  console.log(fs.readdirSync("./"));
   // const payload = JSON.stringify(github.context.payload, undefined, 2);
   app.AddBookmark(data);
 } catch (error) {
