@@ -9,12 +9,21 @@ const CommitFiles = function(msg) {
 };
 
 const PushUI = function(msg) {
+  simpleGit.branchLocal((_, branches) => {
+    if (branches["gh-pages"]) {
+      simpleGit.checkoutBranch(["gh-pages"]);
+    } else {
+      simpleGit.checkout(["--orphan", "gh-pages"]);
+    }
+  });
+
   simpleGit
-    .checkoutLocalBranch("gh-pages")
     .add("./*")
     .commit(msg)
     .push("origin", "gh-pages");
 };
+
+PushUI("foo");
 module.exports = {
   CommitFiles,
   PushUI
