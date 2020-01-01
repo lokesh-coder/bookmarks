@@ -1,33 +1,19 @@
 <script>
-	export let name;
-	import data from '../../src/data.json'
+  import Tailwindcss from "./Tailwindcss.svelte";
+  export let name;
+  import data from "../../src/data.json";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	{#each data.bookmarks as bm}
-		<li>{bm.url}</li>
-	{/each}
+<main class="bg-gray-100 h-screen">
+  <Tailwindcss />
+  <div class="w-2/6 mx-auto ">
+    <h1 class="text-3xl uppercase font-light text-pink-500 text-center py-12">
+      my bookmarks
+    </h1>
+    <div class="shadow-lg rounded-lg overflow-hidden">
+      {#each data.bookmarks as bm}
+        <div class="bg-white p-4 border-b border-gray-200">{bm.url}</div>
+      {/each}
+    </div>
+  </div>
 </main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
