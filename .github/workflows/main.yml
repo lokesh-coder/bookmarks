@@ -11,9 +11,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Do Something Based On Triggered Event Data
-        run: 'echo "Triggered event text: ${{ github.event.client_payload }}"'
+        run: 'echo "Triggered event text: ${{ github.event.client_payload.data }}"'
 
       - name: Trigger bookmark
         uses: ./.github/actions
         with:
-          mndata: "${{github.event.client_payload}}"
+          mndata: "${{github.event.client_payload.data}}"
