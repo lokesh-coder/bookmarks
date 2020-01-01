@@ -2,10 +2,6 @@
   "bookmarks": [
     {
       "title": "one",
-      "link": "1"
-    },
-    {
-      "title": "one",
       "url": "1"
     },
     {
@@ -16,9 +12,7 @@
       "type": "add",
       "url": "http://google.com",
       "category": "search",
-      "tags": [
-        "general"
-      ],
+      "tags": ["general"],
       "date": "10-12-1989",
       "updatedAt": "06:39:30 GMT+0000 (Coordinated Universal Time)"
     },
@@ -26,9 +20,7 @@
       "type": "add",
       "url": "http://loke.sh",
       "category": "portfolio",
-      "tags": [
-        "personal"
-      ],
+      "tags": ["personal"],
       "date": "10-12-1989",
       "updatedAt": "06:40:48 GMT+0000 (Coordinated Universal Time)"
     }
