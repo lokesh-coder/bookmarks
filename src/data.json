@@ -118,6 +118,15 @@
       ],
       "type": "add",
       "url": "http://manonmani.com"
+    },
+    {
+      "category": "portfolio",
+      "date": "10-12-1989",
+      "tags": [
+        "personal"
+      ],
+      "type": "add",
+      "url": "http://lokiboy.com"
     }
   ],
   "lastUpdated": "abc"
