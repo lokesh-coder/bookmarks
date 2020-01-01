@@ -1,4 +1,4 @@
-name: Do Something That Needs Scheduled
+name: BookieBot
 on:
   repository_dispatch:
     types: new-bm
@@ -17,11 +17,3 @@ jobs:
         uses: ./.github/actions
         with:
           mndata: "${{github.event.client_payload.data}}"
-
-      - name: add commit and push
-        run: |
-          git config --global user.name 'Bookie Bot'
-          git config --global user.email 'mexican.dirtyfellow@gmail.com'
-          git add .
-          git commit -m "update data file"
-          git push

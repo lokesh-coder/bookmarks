@@ -6,7 +6,8 @@
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/github": "^2.0.0",
-    "fs-jetpack": "^2.2.3"
+    "fs-jetpack": "^2.2.3",
+    "simple-git": "^1.129.0"
   },
   "devDependencies": {},
   "scripts": {
