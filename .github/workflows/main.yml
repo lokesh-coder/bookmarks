@@ -20,6 +20,8 @@ jobs:
 
       - name: add commit and push
         run: |
+          git config --global user.name 'Bookie Bot'
+          git config --global user.email 'mexican.dirtyfellow@gmail.com'
           git add .
           git commit -m "update data file"
           git push
