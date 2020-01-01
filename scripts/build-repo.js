@@ -19,5 +19,5 @@ function BuildRepo(bookmark) {
   }
 }
 let bookmark = process.argv.splice(-1, 1).join("");
-console.log(bookmark);
+console.log(process.argv);
 BuildRepo(JSON.parse(bookmark));
