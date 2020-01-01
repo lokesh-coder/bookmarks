@@ -73,6 +73,15 @@
       ],
       "type": "add",
       "url": "http://url5.com"
+    },
+    {
+      "category": "portfolio",
+      "date": "10-12-1989",
+      "tags": [
+        "personal"
+      ],
+      "type": "add",
+      "url": "http://url6.com"
     }
   ],
   "lastUpdated": "abc"
