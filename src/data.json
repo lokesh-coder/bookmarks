@@ -46,6 +46,15 @@
         "personal"
       ],
       "date": "10-12-1989"
+    },
+    {
+      "category": "portfolio",
+      "date": "10-12-1989",
+      "tags": [
+        "personal"
+      ],
+      "type": "add",
+      "url": "http://url3.com"
     }
   ],
   "lastUpdated": "abc"
