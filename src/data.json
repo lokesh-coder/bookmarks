@@ -100,6 +100,15 @@
       ],
       "type": "add",
       "url": "http://url8.com"
+    },
+    {
+      "category": "portfolio",
+      "date": "10-12-1989",
+      "tags": [
+        "personal"
+      ],
+      "type": "add",
+      "url": "http://sofia.com"
     }
   ],
   "lastUpdated": "abc"
