@@ -17,3 +17,9 @@ jobs:
         uses: ./.github/actions
         with:
           mndata: "${{github.event.client_payload.data}}"
+
+      - name: add commit and push
+        run: |
+          git add .
+          git commit -m "update data file"
+          git push
