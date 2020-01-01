@@ -1,4 +1,6 @@
 const jetpack = require("fs-jetpack");
+const github = require("@actions/github");
+console.log("######", github.event);
 
 function BuildRepo(bookmark) {
   const dataFilePath = "./src/data.json";

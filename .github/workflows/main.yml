@@ -13,7 +13,7 @@ jobs:
       - name: release
         run: |
           npm install
-          npm run build:repo -- --data="${{github.event.client_payload.data}}"
+          npm run build:repo
           npm run push:repo
           npm run build:ui
           npm run push:ui
