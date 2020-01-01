@@ -18,7 +18,7 @@ function BuildRepo(bookmark) {
     jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
   }
 }
-
+console.log("process.argv", process.argv);
 let bookmark = process.argv.splice(-1).join("");
-console.log(process.argv, bookmark);
+console.log("bookmark", bookmark);
 BuildRepo(JSON.parse(bookmark));
