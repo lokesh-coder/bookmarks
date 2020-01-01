@@ -127,6 +127,15 @@
       ],
       "type": "add",
       "url": "http://lokiboy.com"
+    },
+    {
+      "category": "portfolio",
+      "date": "10-12-1989",
+      "tags": [
+        "personal"
+      ],
+      "type": "add",
+      "url": "http://samurai.com"
     }
   ],
   "lastUpdated": "abc"
