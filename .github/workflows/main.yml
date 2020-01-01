@@ -22,4 +22,10 @@ jobs:
           npm run build:repo
           npm run release:repo
           npm run build:ui
-          npm run release:ui
+
+      - name: Deploy UI
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
