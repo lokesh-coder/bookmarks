@@ -18,8 +18,4 @@ function BuildRepo(bookmark) {
     jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
   }
 }
-console.log("dirs", jetpack.list("./"));
-console.log("datafile", jetpack.read("./datafile.txt"));
-let bookmark = process.argv.splice(-1).join("");
-console.log("bookmark", bookmark);
-BuildRepo(JSON.parse(bookmark));
+BuildRepo(JSON.parse(jetpack.read("./datafile.txt")));
