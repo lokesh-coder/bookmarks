@@ -12,7 +12,7 @@ jobs:
 
       - name: save dat input
         run: |
-          str='"${{ toJson(github.event.client_payload.data) }}"'
+          str="'${{ toJson(github.event.client_payload.data) }}'"
           echo "$str" > ./datafile.txt
 
       - name: release
