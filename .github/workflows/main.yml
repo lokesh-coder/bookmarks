@@ -10,15 +10,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: testing..
+      - name: save dat input
         run: |
-          echo "${{ github.event.client_payload.data }}"
-          echo "${{ toJson(github.event.client_payload.data) }}"
+          echo ""${{ toJson(github.event.client_payload.data) }}"" > .datafile
 
       - name: release
         run: |
           npm install
-          npm run build:repo -- ${{ toJson(github.event.client_payload.data) }}
+          npm run build:repo
           npm run push:repo
           npm run build:ui
           npm run push:ui
