@@ -19,4 +19,4 @@ jobs:
       - name: Trigger bookmark
         uses: ./.github/actions
         with:
-          who-to-greet: "Mona the Octocat"
+          mndata: github.event.client_payload.text
