@@ -12,9 +12,7 @@
       "type": "add",
       "url": "http://google.com",
       "category": "search",
-      "tags": [
-        "general"
-      ],
+      "tags": ["general"],
       "date": "10-12-1989",
       "updatedAt": "06:39:30 GMT+0000 (Coordinated Universal Time)"
     },
@@ -22,9 +20,7 @@
       "type": "add",
       "url": "http://loke.sh",
       "category": "portfolio",
-      "tags": [
-        "personal"
-      ],
+      "tags": ["personal"],
       "date": "10-12-1989",
       "updatedAt": "06:40:48 GMT+0000 (Coordinated Universal Time)"
     },
@@ -32,9 +28,7 @@
       "type": "add",
       "url": "http://url1.com",
       "category": "portfolio",
-      "tags": [
-        "personal"
-      ],
+      "tags": ["personal"],
       "date": "10-12-1989",
       "updatedAt": "06:58:24 GMT+0000 (Coordinated Universal Time)"
     }

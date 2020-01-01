@@ -8,6 +8,7 @@ try {
   const data = JSON.parse(mndata);
   data.updatedAt = new Date().toTimeString();
   const payload = JSON.stringify(github.context.payload, undefined, 2);
+  console.log("payload", payload);
   app.AddBookmark(data);
   gitprocess.CommitFiles(`added bookmark: ${data.url}`);
 } catch (error) {

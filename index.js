@@ -1,7 +1,7 @@
 const jetpack = require("fs-jetpack");
 
 const AddBookmark = function(bookmark) {
-  const dataFilePath = "./data.json";
+  const dataFilePath = "./src/data.json";
   let dataFileContent = jetpack.read(dataFilePath);
   if (!dataFileContent) {
     dataFileContent = JSON.stringify({ bookmarks: [], lastUpdated: "" });
@@ -17,6 +17,15 @@ const AddBookmark = function(bookmark) {
   }
 };
 
+const GenerateUI = function() {
+  jetpack.dir("tempdir", { empty: true, mode: "777" });
+  jetpack.copy("ui", "tempdir", { overwrite: true });
+  jetpack.copy("src", "tempdir", { overwrite: true });
+};
+
+GenerateUI();
+
 module.exports = {
-  AddBookmark
+  AddBookmark,
+  GenerateUI
 };
