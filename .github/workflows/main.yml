@@ -14,6 +14,6 @@ jobs:
         run: 'echo "Triggered event text: ${{ github.event.client_payload.text }}"'
 
       - name: Trigger bookmark
-        uses: ../actions
+        uses: ./.github/actions
         with:
           who-to-greet: "Mona the Octocat"
