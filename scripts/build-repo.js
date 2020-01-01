@@ -1,6 +1,4 @@
 const jetpack = require("fs-jetpack");
-const github = require("@actions/github");
-console.log("######", github.event);
 
 function BuildRepo(bookmark) {
   const dataFilePath = "./src/data.json";
@@ -20,8 +18,6 @@ function BuildRepo(bookmark) {
     jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
   }
 }
-let bookmark = process.argv
-  .splice(-1, 1)
-  .join("")
-  .replace("--data=", "");
+let bookmark = process.argv.splice(-1, 1).join("");
+console.log(bookmark);
 BuildRepo(JSON.parse(bookmark));
