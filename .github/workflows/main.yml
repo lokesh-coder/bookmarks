@@ -16,4 +16,4 @@ jobs:
       - name: Trigger bookmark
         uses: ./.github/actions
         with:
-          mndata: ${{github.event.client_payload}}
+          mndata: "${{github.event.client_payload}}"
