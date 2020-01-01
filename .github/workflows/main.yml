@@ -20,6 +20,6 @@ jobs:
         run: |
           npm install
           npm run build:repo
-          npm run push:repo
+          npm run release:repo
           npm run build:ui
-          npm run push:ui
+          npm run release:ui
