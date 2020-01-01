@@ -14,6 +14,7 @@ jobs:
         run: |
           str='${{ toJson(github.event.client_payload.data) }}'
           echo "$str" > ./datafile.txt
+          echo $(sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' datafile.txt ) > datafile.txt
 
       - name: release
         run: |

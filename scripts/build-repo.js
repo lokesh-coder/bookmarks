@@ -18,5 +18,5 @@ function BuildRepo(bookmark) {
     jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
   }
 }
-console.log("@@", `'${jetpack.read("./datafile.txt")}'`);
-BuildRepo(JSON.parse(`'${jetpack.read("./datafile.txt")}'`));
+console.log("@@", `${jetpack.read("./datafile.txt")}`);
+BuildRepo(JSON.parse(`${jetpack.read("./datafile.txt")}`));
