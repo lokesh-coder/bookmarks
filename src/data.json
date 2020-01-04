@@ -1,4 +1,14 @@
 {
-  "bookmarks": [],
-  "lastUpdated": "2020-01-04T05:30:55.689Z"
+  "bookmarks": [
+    {
+      "name": "-NAME-NOT-PROVIDED-",
+      "url": "http://funmilot.com",
+      "category": "portfolio",
+      "tags": [
+        "personal"
+      ],
+      "time": "2020-01-04T05:32:03.959Z"
+    }
+  ],
+  "lastUpdated": "2020-01-04T05:32:03.959Z"
 }
