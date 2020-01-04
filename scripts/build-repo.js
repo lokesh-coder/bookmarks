@@ -1,8 +1,13 @@
 const jetpack = require("fs-jetpack");
 
-function BuildRepo(bookmark) {
+function BuildRepo({ type, ...bookmark }) {
   const dataFilePath = "./src/data.json";
   let dataFileContent = jetpack.read(dataFilePath);
+
+  const write = () => {
+    dataFileContent.lastUpdated = new Date().toISOString();
+    jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
+  };
 
   if (!dataFileContent) {
     dataFileContent = JSON.stringify({ bookmarks: [], lastUpdated: "" });
@@ -10,38 +15,45 @@ function BuildRepo(bookmark) {
   }
   dataFileContent = JSON.parse(dataFileContent);
 
-  if (bookmark.type == "add") {
+  if (type == "add") {
     const isBookmarkExists = dataFileContent.bookmarks.find(
       b => b.url === bookmark.url
     );
     if (!isBookmarkExists) {
-      dataFileContent.bookmarks.push(bookmark);
+      dataFileContent.bookmarks.push({
+        name: "-NAME-NOT-PROVIDED-",
+        url: "",
+        category: "general",
+        tags: [],
+        time: new Date().toISOString(),
+        ...bookmark
+      });
     } else {
       dataFileContent.bookmarks = dataFileContent.bookmarks(b =>
         b.id == bookmark.id ? bookmark : b
       );
     }
-    jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
+    write();
   }
-  if (bookmark.type == "remove") {
+  if (type == "remove") {
     dataFileContent.bookmarks = dataFileContent.bookmarks.filter(
       b => b.id == bookmark.id
     );
-    jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
+    write();
   }
-  if (bookmark.type == "fav") {
+  if (type == "fav") {
     dataFileContent.bookmarks = dataFileContent.bookmarks.map(b => {
       if (b.id == bookmark.id) {
         b.isFav = !bookmark.isFav;
         return b;
       }
     });
-    jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
+    write();
   }
 
-  if (bookmark.type == "removeall") {
+  if (type == "removeall") {
     dataFileContent.bookmarks = [];
-    jetpack.write(dataFilePath, JSON.stringify(dataFileContent, null, 2));
+    write();
   }
 }
 
