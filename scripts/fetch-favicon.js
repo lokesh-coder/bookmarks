@@ -8,4 +8,4 @@ async function fetchFavicon(url) {
   }
 }
 
-export default fetchFavicon;
+module.exports = fetchFavicon;
