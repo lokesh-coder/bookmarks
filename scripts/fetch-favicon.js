@@ -1,7 +1,7 @@
 async function fetchFavicon(url) {
   const getWebsiteFavicon = require("get-website-favicon");
   try {
-    await getWebsiteFavicon(url);
+    const data = await getWebsiteFavicon(url);
     return data.icons.find(i => i.src).src;
   } catch (e) {
     return "";
