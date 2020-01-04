@@ -21,7 +21,18 @@
       ],
       "icon": "https://blueprintjs.com/assets/favicon.png",
       "time": "2020-01-04T06:37:32.778Z"
+    },
+    {
+      "id": 1578120235116,
+      "title": "Remix icon",
+      "url": "https://remixicon.com/",
+      "category": "portfolio",
+      "tags": [
+        "personal"
+      ],
+      "icon": "https://remixicon.com/favicon.ico",
+      "time": "2020-01-04T06:43:55.116Z"
     }
   ],
-  "lastUpdated": "2020-01-04T06:37:32.778Z"
+  "lastUpdated": "2020-01-04T06:43:55.116Z"
 }
