@@ -1,6 +1,7 @@
 const jetpack = require("fs-jetpack");
+const fetchFavicon = require("./fetch-favicon");
 
-function BuildRepo({ type, ...bookmark }) {
+async function BuildRepo({ type, ...bookmark }) {
   const dataFilePath = "./src/data.json";
   let dataFileContent = jetpack.read(dataFilePath);
 
@@ -20,11 +21,13 @@ function BuildRepo({ type, ...bookmark }) {
       b => b.url === bookmark.url
     );
     if (!isBookmarkExists) {
+      let icon = await fetchFavicon(bookmark.url);
       dataFileContent.bookmarks.push({
-        name: "-NAME-NOT-PROVIDED-",
+        title: "-TITLE-NOT-PROVIDED-",
         url: "",
         category: "general",
         tags: [],
+        icon,
         time: new Date().toISOString(),
         ...bookmark
       });
@@ -57,4 +60,6 @@ function BuildRepo({ type, ...bookmark }) {
   }
 }
 
-BuildRepo(JSON.parse(`${jetpack.read("./datafile.txt")}`));
+(async function run() {
+  await BuildRepo(JSON.parse(`${jetpack.read("./datafile.txt")}`));
+})();
