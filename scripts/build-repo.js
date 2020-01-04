@@ -23,6 +23,7 @@ async function BuildRepo({ type, ...bookmark }) {
     if (!isBookmarkExists) {
       let icon = await fetchFavicon(bookmark.url);
       dataFileContent.bookmarks.push({
+        id: Date.now(),
         title: "-TITLE-NOT-PROVIDED-",
         url: "",
         category: "general",
