@@ -1,24 +1,4 @@
 {
-  "bookmarks": [
-    {
-      "name": "-NAME-NOT-PROVIDED-",
-      "url": "http://funmilot.com",
-      "category": "portfolio",
-      "tags": [
-        "personal"
-      ],
-      "time": "2020-01-04T05:32:03.959Z"
-    },
-    {
-      "title": "yoyo",
-      "url": "https://dribbble.com/shots/7045637/attachments/45917?mode=media",
-      "category": "portfolio",
-      "tags": [
-        "personal"
-      ],
-      "icon": "",
-      "time": "2020-01-04T05:53:41.539Z"
-    }
-  ],
-  "lastUpdated": "2020-01-04T05:53:41.539Z"
+  "bookmarks": [],
+  "lastUpdated": "2020-01-04T06:02:30.292Z"
 }
