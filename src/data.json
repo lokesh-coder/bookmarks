@@ -1,4 +1,16 @@
 {
-  "bookmarks": [],
-  "lastUpdated": "2020-01-04T06:02:30.292Z"
+  "bookmarks": [
+    {
+      "id": 1578117813826,
+      "title": "yoyo",
+      "url": "https://dribbble.com/shots/7045637/attachments/45917?mode=media",
+      "category": "portfolio",
+      "tags": [
+        "personal"
+      ],
+      "icon": "https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico",
+      "time": "2020-01-04T06:03:33.826Z"
+    }
+  ],
+  "lastUpdated": "2020-01-04T06:03:33.826Z"
 }
