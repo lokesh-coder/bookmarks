@@ -33,7 +33,7 @@ async function BuildRepo({ type, ...bookmark }) {
         ...bookmark
       });
     } else {
-      dataFileContent.bookmarks = dataFileContent.bookmarks(b =>
+      dataFileContent.bookmarks = dataFileContent.bookmarks.map(b =>
         b.id == bookmark.id ? bookmark : b
       );
     }
