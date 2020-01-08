@@ -1,5 +1,5 @@
 const jetpack = require("fs-jetpack");
-const fetchFavicon = require("./fetch-favicon");
+const fetchMetadata = require("./fetch-metadata");
 
 async function BuildRepo({ type, ...bookmark }) {
   const dataFilePath = "./src/data.json";
@@ -21,14 +21,13 @@ async function BuildRepo({ type, ...bookmark }) {
       b => b.url === bookmark.url
     );
     if (!isBookmarkExists) {
-      let icon = await fetchFavicon(bookmark.url);
+      let meta = await fetchMetadata(bookmark.url);
       dataFileContent.bookmarks.push({
         id: Date.now(),
-        title: "-TITLE-NOT-PROVIDED-",
         url: "",
         category: "general",
         tags: [],
-        icon,
+        meta,
         time: new Date().toISOString(),
         ...bookmark
       });

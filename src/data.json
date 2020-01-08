@@ -1,4 +1,14 @@
 {
-  "bookmarks": [],
+  "bookmarks": [
+    {
+      "id": 1,
+      "url": "https://printfriendly.com/sollicitudin/vitae/consectetuer/eget/rutrum/",
+      "category": "design",
+      "meta": {
+        "icon": "https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico",
+        "title": "Dribbble"
+      }
+    }
+  ],
   "lastUpdated": "2020-01-08T17:11:21.037Z"
 }
