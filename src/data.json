@@ -32,7 +32,23 @@
         "provider": "remixicon"
       },
       "time": "2020-01-08T17:25:59.318Z"
+    },
+    {
+      "id": 1578505975947,
+      "url": "https://svelte.dev/docs#svelte_register",
+      "category": "general",
+      "tags": [],
+      "meta": {
+        "description": "Cybernetically enhanced web apps",
+        "icon": "https://svelte.dev/favicon.png",
+        "image": "https://svelte.dev/images/twitter-card.png",
+        "title": "Svelte API docs",
+        "language": "en",
+        "url": "https://svelte.dev/docs#svelte_register",
+        "provider": "svelte"
+      },
+      "time": "2020-01-08T17:52:55.947Z"
     }
   ],
-  "lastUpdated": "2020-01-08T17:25:59.318Z"
+  "lastUpdated": "2020-01-08T17:52:55.947Z"
 }
