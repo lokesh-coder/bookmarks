@@ -8,7 +8,31 @@
         "icon": "https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico",
         "title": "Dribbble"
       }
+    },
+    {
+      "id": 1578504359318,
+      "url": "https://remixicon.com/",
+      "category": "portfolio",
+      "tags": [
+        "personal"
+      ],
+      "meta": {
+        "description": "Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers. All of the icons are free to use for both personal and commercial.",
+        "icon": "https://remixicon.com/favicon.ico",
+        "keywords": [
+          "remix-icon",
+          "icon",
+          "svg",
+          "icon-font",
+          "icon-pack"
+        ],
+        "title": "Remix Icon - Open source icon library",
+        "language": "en",
+        "url": "https://remixicon.com/",
+        "provider": "remixicon"
+      },
+      "time": "2020-01-08T17:25:59.318Z"
     }
   ],
-  "lastUpdated": "2020-01-08T17:11:21.037Z"
+  "lastUpdated": "2020-01-08T17:25:59.318Z"
 }
