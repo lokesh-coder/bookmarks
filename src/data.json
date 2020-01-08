@@ -48,7 +48,24 @@
         "provider": "svelte"
       },
       "time": "2020-01-08T17:52:55.947Z"
+    },
+    {
+      "id": 1578506333834,
+      "url": "https://github.com/actions/checkout",
+      "category": "general",
+      "tags": [],
+      "meta": {
+        "description": "Contribute to actions/checkout development by creating an account on GitHub.",
+        "icon": "https://github.githubassets.com/favicon.ico",
+        "image": "https://avatars2.githubusercontent.com/u/44036562?s=400&v=4",
+        "title": "actions/checkout",
+        "language": "en",
+        "type": "object",
+        "url": "https://github.com/actions/checkout",
+        "provider": "GitHub"
+      },
+      "time": "2020-01-08T17:58:53.834Z"
     }
   ],
-  "lastUpdated": "2020-01-08T17:52:55.947Z"
+  "lastUpdated": "2020-01-08T17:58:53.834Z"
 }
