@@ -1,38 +1,4 @@
 {
-  "bookmarks": [
-    {
-      "id": 1578117813826,
-      "title": "yoyo",
-      "url": "https://dribbble.com/shots/7045637/attachments/45917?mode=media",
-      "category": "portfolio",
-      "tags": [
-        "personal"
-      ],
-      "icon": "https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico",
-      "time": "2020-01-04T06:03:33.826Z"
-    },
-    {
-      "category": "portfolio",
-      "icon": "https://blueprintjs.com/assets/favicon.png",
-      "id": 1578119852778,
-      "tags": [
-        "personal"
-      ],
-      "time": "2020-01-04T06:37:32.778Z",
-      "title": null,
-      "url": "https://blueprintjs.com/"
-    },
-    {
-      "category": "portfolio",
-      "icon": "https://remixicon.com/favicon.ico",
-      "id": 1578120235116,
-      "tags": [
-        "personal"
-      ],
-      "time": "2020-01-04T06:43:55.116Z",
-      "title": "REMIX",
-      "url": "https://remixicon.com/"
-    }
-  ],
-  "lastUpdated": "2020-01-06T06:30:36.932Z"
+  "bookmarks": [],
+  "lastUpdated": "2020-01-08T17:11:21.037Z"
 }
