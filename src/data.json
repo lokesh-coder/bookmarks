@@ -65,7 +65,24 @@
         "provider": "GitHub"
       },
       "time": "2020-01-08T17:58:53.834Z"
+    },
+    {
+      "id": 1578845846444,
+      "url": "https://fonts.google.com/?sort=popularity&selection.family=Monoton|Rubik:400,500,700&query=rub/",
+      "category": "Tools",
+      "tags": [
+        "personal"
+      ],
+      "meta": {
+        "description": "Making the web more beautiful, fast, and open through great typography",
+        "icon": "https://www.gstatic.com/images/branding/product/1x/google_fonts_ios_76dp.png",
+        "image": "https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_1200dp.png",
+        "title": "Google Fonts",
+        "url": "https://fonts.google.com/",
+        "provider": "Google Fonts"
+      },
+      "time": "2020-01-12T16:17:26.444Z"
     }
   ],
-  "lastUpdated": "2020-01-08T17:58:53.834Z"
+  "lastUpdated": "2020-01-12T16:17:26.444Z"
 }
