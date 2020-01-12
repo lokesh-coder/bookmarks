@@ -12,7 +12,7 @@
   };
 </script>
 
-<main class="h-screen">
+<main class="h-full">
   <Tailwindcss />
   <div
     class="w-full h-full lg:flex font-body lg:justify-end flex-col lg:flex-row">
