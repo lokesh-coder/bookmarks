@@ -8,7 +8,6 @@
   let bookmarks = Links;
 
   const onFilter = results => {
-    console.log("results", results.detail.items);
     bookmarks = results.detail.items;
   };
 </script>
