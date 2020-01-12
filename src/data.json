@@ -100,7 +100,35 @@
         "provider": "heropatterns"
       },
       "time": "2020-01-12T17:10:49.056Z"
+    },
+    {
+      "id": 1578850552537,
+      "url": "https://www.mockaroo.com/",
+      "category": "tools",
+      "tags": [
+        "personal"
+      ],
+      "meta": {
+        "description": "A free test data generator and API mocking tool - Mockaroo lets you create custom CSV, JSON, SQL, and Excel datasets to test and demo your software.",
+        "icon": "https://www.mockaroo.com/assets/favicon-8d320ac46812befcc8e0c5388550bd14d2105f78bb354728e63dd50d9e345ede.png",
+        "keywords": [
+          "test data generator",
+          "random data generator",
+          "mock API",
+          "mock REST",
+          "csv generator",
+          "json generator",
+          "test data",
+          "mock data",
+          "generate test data",
+          "software testing"
+        ],
+        "title": "Mockaroo  - Random Data Generator and API Mocking Tool | JSON / CSV / SQL / Excel",
+        "url": "https://www.mockaroo.com/",
+        "provider": "mockaroo"
+      },
+      "time": "2020-01-12T17:35:52.537Z"
     }
   ],
-  "lastUpdated": "2020-01-12T17:10:49.056Z"
+  "lastUpdated": "2020-01-12T17:35:52.537Z"
 }
