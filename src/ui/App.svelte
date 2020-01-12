@@ -29,7 +29,9 @@
       </div>
 
     </div>
-    <div class="w-full lg:w-8/12 bg-whitish px-12 py-12" id="pattern-two">
+    <div
+      class="w-full lg:w-8/12 bg-whitish px-4 lg:px-12 py-12"
+      id="pattern-two">
       <div class="lg:w-6/12 mx-auto relative">
         <SearchBar items={Links} on:filteredItems={onFilter} />
         <List {bookmarks} />
