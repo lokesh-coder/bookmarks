@@ -4,9 +4,9 @@
   const categories = groupByCategories(links);
 </script>
 
-<div class="p-2 bg-gray-200 my-2">
+<div class="p-2 text-gray-100 my-8">
   {#each categories as [name, links]}
-    <a class=" text-sm text-gray-700 px-1" href="#{name}">
+    <a class=" text-sm px-1" href="#{name}">
       <span>{name} ({links.length})</span>
 
     </a>

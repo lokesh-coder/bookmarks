@@ -1,11 +1,10 @@
 <style global>
+  @import url("https://fonts.googleapis.com/css?family=Monoton|Rubik:400,500,700&display=swap");
+  @import url("https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css");
+
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
-
-  body {
-    @apply .bg-gray-100;
-  }
 
   .favicon-frame {
     /* -webkit-clip-path: url(#favicon-frame);
