@@ -1,4 +1,5 @@
 <script>
+  import { fade, fly, blur } from "svelte/transition";
   import { groupByCategories } from "../utils/group-links.js";
 
   export let bookmarks = [];
@@ -7,17 +8,20 @@
 
 {#each categories as [name, links]}
 
-  <h1
+  <span
     class="text-xs uppercase text-primary px-2 py-1 inline-block border
     border-primary inline-flex justify-center mb-4"
-    id={name}>
+    id={name}
+    transition:blur>
     <i class="ri-bookmark-fill mr-1" />
     {name}
-  </h1>
+  </span>
   <div class="overflow-hidden mb-4">
     {#each links as link}
-      <div class="py-3 flex hover:bg-indigo-100 cursor-pointer">
-        <span class="favicon-frame border-r border-gray-30 ">
+      <div
+        class="py-1 flex hover:bg-indigo-100 cursor-pointer pr-2 "
+        transition:blur>
+        <span class="favicon-frame border-r border-gray-300 ">
           <img src={link.meta.icon} alt={link.meta.title} />
         </span>
         <span class="pl-2 flex flex-col justify-center overflow-hidden">
