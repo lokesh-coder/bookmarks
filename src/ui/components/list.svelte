@@ -16,17 +16,15 @@
   </h1>
   <div class="overflow-hidden mb-4">
     {#each links as link}
-      <div
-        class="py-1 border-b border-gray-300 flex items-center
-        hover:bg-indigo-100 cursor-pointer">
-        <span class="favicon-frame">
+      <div class="py-3 flex hover:bg-indigo-100 cursor-pointer">
+        <span class="favicon-frame border-r border-gray-30 ">
           <img src={link.meta.icon} alt={link.meta.title} />
         </span>
-        <span>
+        <span class="pl-2 flex flex-col justify-center overflow-hidden">
           <h3 class="text-sm font-medium text-gray-700 capitalize">
             {link.meta.title}
           </h3>
-          <p class="text-gray-600 text-sm">{link.url}</p>
+          <p class="text-gray-600 text-sm truncate">{link.url}</p>
         </span>
       </div>
     {/each}

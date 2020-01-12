@@ -15,8 +15,8 @@
 
 <main class="h-screen">
   <Tailwindcss />
-  <div class="w-full h-full flex font-body">
-    <div class="w-4/12 bg-primary flex flex-col">
+  <div class="w-full h-full flex font-body justify-end">
+    <div class="w-4/12 bg-primary flex flex-col fixed top-0 left-0 h-screen">
       <div class="flex-1 flex items-center justify-center flex-col">
         <h1 class="font-display text-5xl text-white text-center">BOOKIE</h1>
         <p class="text-blue-900">List of all my favorite application links</p>

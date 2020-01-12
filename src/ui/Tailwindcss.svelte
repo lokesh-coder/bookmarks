@@ -11,6 +11,7 @@
     clip-path: url(#favicon-frame);
     transform: scale(0.7);
     background: #393d50; */
+    min-width: 64px;
     width: 64px;
     height: 64px;
     display: flex;
