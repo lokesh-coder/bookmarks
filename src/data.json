@@ -147,7 +147,25 @@
         "provider": "grabient"
       },
       "time": "2020-01-12T18:37:26.626Z"
+    },
+    {
+      "id": 1578881287316,
+      "url": "https://flatuicolors.com/",
+      "category": "tools",
+      "tags": [
+        "colors"
+      ],
+      "meta": {
+        "description": "280 handpicked colors ready for COPY & PASTE",
+        "icon": "https://flatuicolors.com/static/favicon.ico",
+        "image": "https://flatuicolors.com/static/facebook-share.png",
+        "title": "Flat UI Colors 2 - 14 Color Palettes, 280 colors 🎨",
+        "type": "website",
+        "url": "https://flatuicolors.com/",
+        "provider": "flatuicolors"
+      },
+      "time": "2020-01-13T02:08:07.316Z"
     }
   ],
-  "lastUpdated": "2020-01-12T18:37:26.626Z"
+  "lastUpdated": "2020-01-13T02:08:07.316Z"
 }
