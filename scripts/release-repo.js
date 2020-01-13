@@ -8,4 +8,4 @@ function ReleaseRepo(msg) {
     .push("origin", "master");
 }
 
-ReleaseRepo("releaseing..");
+ReleaseRepo("Bookmarks updated");

@@ -7,17 +7,25 @@ jobs:
     name: Run Some Scheduled Thing
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: save date input
+      - name: save dat input
         run: |
           str='${{ toJson(github.event.client_payload.data) }}'
           echo "$str" > ./datafile.txt
           echo $(sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' datafile.txt ) > datafile.txt
 
-      - name: Update JSON data
+      - name: Build UI
         run: |
           npm install
           npm run build:repo
           npm run release:repo
+          npm run build:ui
+
+      - name: Deploy UI
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.BM_GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
