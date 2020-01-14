@@ -44,4 +44,27 @@
     height: 100%;
     opacity: 0.05;
   }
+  .selectContainer {
+    --borderFocusColor: transparent;
+    --background: rgba(255, 255, 255, 0.3);
+    --inputColor: #fff;
+    --listBackground: #e3f0f6;
+    --itemHoverBG: #90cdf4;
+    --border: transparent;
+    --itemIsActiveBG: #4299e1;
+
+    --multiItemBG: #fff;
+    --multiItemBorderRadius: 3px;
+    --multiItemPadding: 0 10px;
+    --multiItemHeight: 30px;
+    --multiItemMargin: 6px 7px 0 0;
+    --multiItemActiveBG: #90cdf4;
+    --multiSelectPadding: 0 8px 0 8px;
+  }
+  .multiSelectItem_label {
+    font-size: 13px;
+  }
+  .selection {
+    color: #fff;
+  }
 </style>
