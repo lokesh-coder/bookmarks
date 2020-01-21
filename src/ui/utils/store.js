@@ -17,7 +17,7 @@ function redux(init, reducer) {
   function dispatch(action, payload) {
     update(state => {
       let updatedState = reducer(state, action, payload);
-      devTools.send(action, updatedState);
+      if (devTools) devTools.send(action, updatedState);
       return updatedState;
     });
   }
