@@ -7,5 +7,5 @@ export const filterItems = (items, keyword) => {
   const fuse = new Fuse(items, {
     keys: ["name", "url", "category", "domain"]
   });
-  return fuse.search(keyword);
+  return [["search", fuse.search(keyword)]];
 };

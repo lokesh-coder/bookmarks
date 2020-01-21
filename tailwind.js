@@ -9,8 +9,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      body: ["Rubik"],
-      display: ["Monoton"]
+      body: ["'M PLUS 1p'"],
+      title: ["Rubik"]
     }
   },
   variants: {},

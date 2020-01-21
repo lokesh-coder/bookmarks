@@ -1,20 +1,25 @@
 <script>
   import { fade, fly, blur } from "svelte/transition";
-  import { groupByCategories } from "../utils/group-links.js";
+  import { store } from "../utils/store";
 
   export let bookmarks = [];
-  $: categories = groupByCategories(bookmarks);
+
+  const icons = {
+    default: "bookmark-fill",
+    category: "file-mark-fill",
+    tag: "price-tag-3-fill",
+    search: "filter-2-fill"
+  };
 </script>
 
-{#each categories as [name, links]}
-
+{#each bookmarks as [name, links]}
   <span
     class="text-xs uppercase text-primary px-2 py-1 inline-block border
-    border-primary inline-flex justify-center mb-4"
+    border-primary inline-flex justify-center mb-4 font-title"
     id={name}
     transition:blur>
-    <i class="ri-bookmark-fill mr-1" />
-    {name}
+    <i class="ri-{icons[$store.groupType]} mr-1" />
+    {name == 'undefined' ? 'All bookmarks' : name} ({links.length})
   </span>
   <div class="overflow-hidden mb-4">
     {#each links as link}

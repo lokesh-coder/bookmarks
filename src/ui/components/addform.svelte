@@ -5,6 +5,7 @@
   export let data;
   import Select from "svelte-select";
   const addUrlHandler = async data => {
+    if (!data.url) return;
     let response = await fetch(
       "https://api.github.com/repos/lokesh-coder/bookmarks/dispatches",
       {
@@ -81,15 +82,15 @@
     <div class="flex mt-10 justify-center">
       <button
         class="bg-primary text-white px-3 py-2 rounded mt-2 uppercase
-        font-medium text-sm mr-4 text-white">
-        <i class="ri-save-fill" />
+        font-medium text-sm mr-4 text-white flex items-center">
+        <i class="ri-save-line text-2xl mr-2 leading-none" />
         Add link
       </button>
       <button
         class="border border-blue-300 text-white px-3 py-2 rounded mt-2
-        uppercase font-medium text-sm text-blue-300"
+        uppercase font-medium text-sm text-blue-300 flex items-center"
         on:click={closeHandler}>
-        <i class="ri-close-fill" />
+        <i class="ri-close-fill text-2xl mr-2 leading-none" />
         Close
       </button>
     </div>

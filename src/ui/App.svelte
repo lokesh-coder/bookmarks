@@ -1,19 +1,24 @@
 <script>
+  import { onMount } from "svelte";
   import hotkeys from "hotkeys-js";
   import Tailwindcss from "./Tailwindcss.svelte";
   import data from "../../src/data.json";
   import List from "./components/list.svelte";
   import SearchBar from "./components/searchbar.svelte";
   import Categories from "./components/categories.svelte";
+  import Tags from "./components/tags.svelte";
   import FormBar from "./components/formbar.svelte";
   import Addform from "./components/addform.svelte";
+  import Navbar from "./components/navbar.svelte";
+  import { store } from "./utils/store";
   let Links = data.bookmarks;
   let bookmarks = Links;
   let openFormbar = false;
 
-  const onFilter = results => {
-    bookmarks = results.detail.items;
-  };
+  onMount(() => {
+    store.dispatch("setLinks", { links: data.bookmarks });
+  });
+
   hotkeys("cmd+v", function(event, handler) {
     navigator.clipboard.readText().then(data => {
       console.log("data", data);
@@ -21,28 +26,21 @@
     });
     event.preventDefault();
   });
+
+  const onSearch = results => {
+    console.log(results.detail.keyword);
+    if (results.detail.keyword)
+      store.dispatch("searchLinks", { keyword: results.detail.keyword });
+    else store.dispatch("resetFilter");
+  };
 </script>
 
 <main class="h-full">
   <Tailwindcss />
   <div
     class="w-full h-full lg:flex font-body lg:justify-end flex-col lg:flex-row">
-    <div
-      class="w-full lg:w-4/12 bg-primary flex flex-col lg:fixed top-0 left-0
-      h-screen"
-      id="pattern-one">
-      <div class="flex-1 flex items-center justify-center flex-col">
-        <h1 class="font-display text-5xl text-white text-center">BOOKIE</h1>
-        <p class="text-blue-700">List of all my favorite application links</p>
-      </div>
-      <div class=" flex items-center justify-center ">
-        <Categories links={Links} />
-      </div>
 
-    </div>
-    <div
-      class="w-full lg:w-8/12 bg-blue-100 px-4 lg:px-12 py-12 relative"
-      id="pattern-two">
+    <div class="w-full px-4 lg:px-12 py-8 relative">
       <FormBar
         open={openFormbar}
         on:close={() => {
@@ -56,10 +54,17 @@
           }} />
       </FormBar>
 
-      <div class="lg:w-6/12 mx-auto relative">
+      <div class="lg:w-4/12 mx-auto relative">
 
-        <SearchBar items={Links} on:filteredItems={onFilter} />
-        <List {bookmarks} />
+        <SearchBar on:search={onSearch} />
+        <Navbar />
+        {#if $store.isCategoriesSectionOpen}
+          <Categories links={Links} />
+        {/if}
+        {#if $store.isTagsSectionOpen}
+          <Tags links={Links} />
+        {/if}
+        <List bookmarks={$store.links} />
       </div>
     </div>
   </div>

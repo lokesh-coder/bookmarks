@@ -1,10 +1,15 @@
 <style global>
-  @import url("https://fonts.googleapis.com/css?family=Monoton|Rubik:400,500,700&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,500,700&display=swap");
   @import url("https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css");
 
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+  input::placeholder {
+    @apply text-gray-500 !important;
+  }
 
   .favicon-frame {
     /* -webkit-clip-path: url(#favicon-frame);
@@ -25,7 +30,7 @@
     content: "";
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
     opacity: 0.1;

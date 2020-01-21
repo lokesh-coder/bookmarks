@@ -51,9 +51,9 @@
   {#if isAddTokenBtnVisible}
     <button
       on:click={tokenAddHandler}
-      class="bg-green-500 text-white px-3 rounded text-sm flex align-center
-      justify-center">
-      Add token
+      class="text-gray=500 px-3 rounded text-sm flex align-center justify-center">
+      <i class="ri-key-fill mr-1 text-lg" />
+
     </button>
   {/if}
   {#if !isAddTokenBtnVisible}
