@@ -55,16 +55,16 @@
   });
 </script>
 
-<div class="flex p-12 bg-blue-800 ">
-  <div class="lg:w-6/12 mx-auto ">
-    <h3 class="text-whitish text-xl mb-3 text-center">Add new bookmark</h3>
+<div class="flex p-12 bg-blue-100 ">
+  <div class="lg:w-4/12 mx-auto ">
+    <h3 class="text-blue-700 text-base mb-3 text-center">Add new bookmark</h3>
     <div class="relative flex items-center">
       <i class="ri-bookmark-fill mr-1 absolute mx-3 text-gray-400" />
       <input
         placeholder="paste bookmark url..."
         on:keydown={addUrlHandler}
-        class=" p-2 px-8 w-full bg-white-alpha-30 rounded text-white
-        focus:outline-none" />
+        class=" py-1 px-8 w-full bg-white border border-blue-300 text-blue-500
+        text-sm focus:outline-none" />
     </div>
     <div class="flex mt-2">
       <div class="w-64 mr-3">
@@ -81,16 +81,16 @@
     </div>
     <div class="flex mt-10 justify-center">
       <button
-        class="bg-primary text-white px-3 py-2 rounded mt-2 uppercase
-        font-medium text-sm mr-4 text-white flex items-center">
-        <i class="ri-save-line text-2xl mr-2 leading-none" />
+        class="bg-primary text-white px-2 py-1 mt-2 uppercase text-xs mr-4
+        text-white flex items-center font-title">
+        <i class="ri-save-line text-xl mr-2 leading-none" />
         Add link
       </button>
       <button
-        class="border border-blue-300 text-white px-3 py-2 rounded mt-2
-        uppercase font-medium text-sm text-blue-300 flex items-center"
+        class="border border-blue-300 text-white px-2 py-1 mt-2 uppercase
+        text-xs text-blue-300 flex items-center font-title"
         on:click={closeHandler}>
-        <i class="ri-close-fill text-2xl mr-2 leading-none" />
+        <i class="ri-close-fill text-xl mr-2 leading-none" />
         Close
       </button>
     </div>

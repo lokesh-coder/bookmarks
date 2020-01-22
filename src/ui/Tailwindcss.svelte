@@ -50,26 +50,36 @@
     opacity: 0.05;
   }
   .selectContainer {
-    --borderFocusColor: transparent;
-    --background: rgba(255, 255, 255, 0.3);
-    --inputColor: #fff;
+    --borderFocusColor: 1px solid #8fccf3;
+    --background: #fff;
+    --inputColor: #4299e1;
+    --inputFontSize: 0.875rem;
     --listBackground: #e3f0f6;
     --itemHoverBG: #90cdf4;
-    --border: transparent;
+    --border: 1px solid #8fccf3;
     --itemIsActiveBG: #4299e1;
+    --borderRadius: 0;
+    --height: 31px;
 
+    --multiClearWidth: 14px;
+    --multiClearHeight: 14px;
     --multiItemBG: #fff;
-    --multiItemBorderRadius: 3px;
+    --multiItemBorderRadius: 0;
     --multiItemPadding: 0 10px;
     --multiItemHeight: 30px;
-    --multiItemMargin: 6px 7px 0 0;
+    --multiItemMargin: 0;
     --multiItemActiveBG: #90cdf4;
     --multiSelectPadding: 0 8px 0 8px;
   }
+  .selectContainer input {
+    border: 1px solid #8fccf3;
+  }
   .multiSelectItem_label {
     font-size: 13px;
+    color: #4299e0;
   }
   .selection {
-    color: #fff;
+    color: #4299e1;
+    font-size: 0.875rem;
   }
 </style>
