@@ -43,6 +43,7 @@
     <div class="w-full px-4 lg:px-12 py-8 relative">
       <FormBar
         open={openFormbar}
+        title="Add new bookmark"
         on:close={() => {
           console.log('closed');
           openFormbar = false;
@@ -56,7 +57,9 @@
 
       <div class="lg:w-4/12 mx-auto relative">
 
-        <SearchBar on:search={onSearch} />
+        <SearchBar
+          on:search={onSearch}
+          on:showAddForm={() => (openFormbar = true)} />
         <Navbar />
         {#if $store.isCategoriesSectionOpen}
           <Categories links={Links} />

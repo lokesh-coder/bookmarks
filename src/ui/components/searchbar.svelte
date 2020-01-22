@@ -6,6 +6,9 @@
   const handleFilter = ({ target: { value: keyword } }) => {
     dispatch("search", { keyword });
   };
+  const showAddForm = () => {
+    dispatch("showAddForm");
+  };
   const groupByCategories = () => {
     dispatch("groupByCategories");
   };
@@ -30,6 +33,6 @@
   </div>
 
   <div class="flex">
-    <Actions />
+    <Actions on:showAddForm={showAddForm} />
   </div>
 </div>

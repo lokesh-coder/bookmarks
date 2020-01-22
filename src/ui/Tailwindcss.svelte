@@ -54,12 +54,15 @@
     --background: #fff;
     --inputColor: #4299e1;
     --inputFontSize: 0.875rem;
-    --listBackground: #e3f0f6;
+    --listBackground: #fff;
     --itemHoverBG: #90cdf4;
     --border: 1px solid #8fccf3;
     --itemIsActiveBG: #4299e1;
     --borderRadius: 0;
     --height: 31px;
+
+    --listBorderRadius: 0;
+    --itemFirstBorderRadius: 0;
 
     --multiClearWidth: 14px;
     --multiClearHeight: 14px;
@@ -73,6 +76,9 @@
   }
   .selectContainer input {
     border: 1px solid #8fccf3;
+  }
+  .selectContainer .item {
+    font-size: 0.875rem;
   }
   .multiSelectItem_label {
     font-size: 13px;

@@ -1,4 +1,6 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
   let isAddTokenFormVisible = false;
   let isAddUrlFormVisible = false;
   let isAddTokenBtnVisible = !localStorage.getItem("BOOKIE_TOKEN");
@@ -13,7 +15,8 @@
   };
 
   const urlAddHandler = () => {
-    isAddUrlFormVisible = true;
+    // isAddUrlFormVisible = true;
+    dispatch("showAddForm");
   };
 
   const addUrlHandler = async e => {
