@@ -183,7 +183,27 @@
         "provider": "CSS Gradient"
       },
       "time": "2020-01-13T02:20:54.457Z"
+    },
+    {
+      "id": 1579719457118,
+      "url": "https://fireship.io/snippets/custom-svelte-stores/",
+      "category": "sveltejs",
+      "tags": [
+        "framework",
+        "svelte"
+      ],
+      "meta": {
+        "description": "A quick guide to Svelte custom stores and their use-cases.",
+        "icon": "https://fireship.io/img/favicon.png",
+        "image": "https://fireship.io/img/covers/default.png",
+        "title": "Custom Svelte Store Examples",
+        "language": "en",
+        "type": "article",
+        "url": "https://fireship.io/snippets/custom-svelte-stores/",
+        "provider": "fireship"
+      },
+      "time": "2020-01-22T18:57:37.118Z"
     }
   ],
-  "lastUpdated": "2020-01-13T02:20:54.457Z"
+  "lastUpdated": "2020-01-22T18:57:37.118Z"
 }
