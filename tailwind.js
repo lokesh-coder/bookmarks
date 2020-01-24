@@ -10,9 +10,11 @@ module.exports = {
     },
     fontFamily: {
       body: ["'M PLUS 1p'"],
-      title: ["Rubik"]
+      title: ["'Circular Std Book'"]
     }
   },
-  variants: {},
+  variants: {
+    textColor: ["responsive", "hover", "group-hover"]
+  },
   plugins: [require("tailwindcss-bg-alpha")()]
 };

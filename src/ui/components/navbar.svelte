@@ -42,7 +42,7 @@
       <li class="px-3 py-1 flex">
 
         <i
-          class="ri-price-tag-3-fill text-lg cursor-pointer leading-none"
+          class="ri-price-tag-2-fill text-lg cursor-pointer leading-none"
           on:click={groupByTags} />
       </li>
 

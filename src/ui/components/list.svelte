@@ -24,7 +24,7 @@
   <div class="overflow-hidden mb-4">
     {#each links as link}
       <div
-        class="py-1 flex hover:bg-blue-200 cursor-pointer pr-2 "
+        class="py-1 flex hover:bg-blue-200 cursor-pointer pr-2 group"
         transition:blur>
         <span class="favicon-frame border-r border-blue-300 ">
           <img
@@ -33,10 +33,14 @@
             onerror="this.src=`https://dummyimage.com/64/eb5757/ffffff.png&amp;text={link.meta.title[0]}`" />
         </span>
         <span class="pl-2 flex flex-col justify-center overflow-hidden">
-          <h3 class="text-sm font-medium text-blue-700 capitalize truncate">
+          <h3
+            class="text-sm font-medium text-blue-700 capitalize truncate
+            font-title">
             {link.meta.title}
           </h3>
-          <p class="text-gray-600 text-sm truncate">{link.url}</p>
+          <p class="text-gray-500 text-xs truncate group-hover:text-blue-800">
+            {link.url}
+          </p>
         </span>
       </div>
     {/each}

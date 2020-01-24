@@ -1,6 +1,7 @@
 <style global>
   @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap");
   @import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,500,700&display=swap");
+  @import url("https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book");
   @import url("https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css");
 
   @tailwind base;
