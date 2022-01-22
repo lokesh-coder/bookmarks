@@ -13,7 +13,7 @@
     "get-website-favicon": "0.0.7",
     "hotkeys-js": "^3.7.3",
     "lodash": "^4.17.15",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "npm-run-all": "^4.1.5",
     "page-metadata-parser": "^1.1.4",
     "simple-git": "^1.129.0",
